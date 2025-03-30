@@ -20,7 +20,8 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 UPLOAD_DIR = "uploaded_images"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-
+# This line should be added in your main.py file to serve static files
+# app.mount("/uploaded_images", StaticFiles(directory="uploaded_images"), name="uploaded_images")
 
 
 @router.get("/profile")

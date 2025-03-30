@@ -34,11 +34,11 @@ const Cars = () => {
       try {
         setLoading(true);
         
-        let url = 'http://localhost:8000/car/cars';
+        let url = `${import.meta.env.VITE_API_URL}/car/cars`;
         
        
         if (locationFilter || typeFilter) {
-          url = 'http://localhost:8000/car/cars/search';
+          url = `${import.meta.env.VITE_API_URL}/car/cars/search`;
           const params = new URLSearchParams();
           
           if (locationFilter) params.append('location', locationFilter);

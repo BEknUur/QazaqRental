@@ -137,8 +137,8 @@ const DashboardSearch: React.FC = () => {
     });
   };
 
-  const handleBookCar = (car: Car) => {
-    navigate(`/booking/${car.id}`);
+  const handleBookCar = () => {
+    navigate(`/booking/`);
   };
 
   const handleLikeCar = async (car: Car) => {
@@ -301,7 +301,7 @@ const DashboardSearch: React.FC = () => {
                     car={car}
                     isLiked={favorites.includes(car.id)}
                     onLike={() => handleLikeCar(car)}
-                    onBook={() => handleBookCar(car)}
+                    onBook={() => handleBookCar}
                   />
                 ))}
               </div>

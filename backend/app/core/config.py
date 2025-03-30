@@ -9,6 +9,7 @@ class Settings:
     ALLOWED_ORIGINS = [
         "http://localhost:5173",
          "http://127.0.0.1:5173"
+         "http://161.35.217.68"
     ]
 
 settings = Settings()

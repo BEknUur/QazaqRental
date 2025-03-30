@@ -47,7 +47,8 @@ const DashboardFavourites: React.FC = () => {
     fetchFavorites();
   }, []);
 
-  const handleBookCar = (car: Car) => {
+  
+  const handleBookCar = () => {
     navigate(`/main/booking`);
   };
 
@@ -112,7 +113,7 @@ const DashboardFavourites: React.FC = () => {
                   car={car}
                   isLiked={true} 
                   onLike={() => handleUnlikeCar(car)} 
-                  onBook={() => handleBookCar(car)}
+                  onBook={() => handleBookCar()}
                 />
               ))}
             </div>

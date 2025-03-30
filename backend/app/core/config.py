@@ -7,8 +7,6 @@ class Settings:
     DATABASE_URL = os.getenv("DATABASE_URL")
     SECRET_KEY = os.getenv("SECRET_KEY")
     ALLOWED_ORIGINS = [
-        "http://localhost:5173",
-         "http://127.0.0.1:5173"
          "http://161.35.217.68"
     ]
 
